@@ -404,6 +404,11 @@ hr {
   color: #fff;
   font-weight: 500;
   cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.p-section-about__container__content-button:hover {
+  opacity: 0.8;
 }
 
 /* ----------------- Education-------------- */
@@ -601,7 +606,7 @@ hr {
   background: #fff;
   border-radius: 4px;
   cursor: pointer;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s ease;
 }
 
 .p-section-blog_container-card-layout:hover {
@@ -635,7 +640,7 @@ hr {
 .p-section-blog_container-card-layout_content-text {
   font-size: 15px;
   color: #424E60;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .p-section-blog_container-card-layout_content-button {
