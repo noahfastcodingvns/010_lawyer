@@ -408,7 +408,7 @@ hr {
 
 /* ----------------- Education-------------- */
 .p-section-education {
-  margin: 100px auto;
+  margin: 50px auto;
 }
 
 .p-section-education__heading {
@@ -418,7 +418,7 @@ hr {
 
 .p-section-education__heading-big {
   text-align: center;
-  font-size: 35px;
+  font-size: 30px;
 }
 
 .p-section-education__heading-small {
@@ -428,10 +428,101 @@ hr {
   color: #424E60;
 }
 
+.p-section-edication__content {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.p-section-education__heading-left {
+  flex: 1;
+}
+
+.p-section-education__heading-left__container {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.p-section-education__heading-left__container-icon {
+  width: 112px;
+  height: 112px;
+  border-radius: 4px;
+}
+
+.p-section-education__heading-left__container-content {
+  margin: 5px 0 0 15px;
+}
+
+.p-section-education__heading-left__container-content-small {
+  font-size: 15px;
+  color: #132238;
+}
+
+.p-section-education__heading-left__container-content-big {
+  font-weight: 400;
+  font-size: 22px;
+  margin: 7px auto;
+  color: #132238;
+}
+
+.p-section-education__heading-left__container-content-text {
+  color: #697484;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  padding-right: 20px;
+}
+
+.p-section-education__heading-right {
+  flex: 1;
+}
+
+.p-section-education__heading-right__container {
+  display: flex;
+  background: #FFF7D1;
+  padding: 32px;
+  margin-bottom: 32px;
+}
+
+.p-section-education__heading-right__container-icon {
+  width: 144px;
+  height: 144px;
+  border-radius: 4px;
+}
+
+.p-section-education__heading-right__container-content {
+  margin: 10px 0 0 15px;
+}
+
+.p-section-education__heading-right__container-content-small {
+  font-size: 15px;
+  color: #132238;
+}
+
+.p-section-education__heading-right__container-content-big {
+  font-weight: 400;
+  font-size: 22px;
+  margin: 10px auto;
+  color: #132238;
+}
+
+.p-section-education__heading-right__container-content-text {
+  color: #697484;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
 
 /* -------------------Feedback------------------ */
 .p-section-feedback {
-  margin: 100px auto;
+  margin: 50px auto;
 }
 
 .p-section-feedback_testimonial {
@@ -460,10 +551,6 @@ hr {
   margin: 10px 10px;
 }
 
-/* .p-section-feedback__testimonial-quote {
- 
-} */
-
 .p-section-feedback__testimonial-text {
   text-align: center;
   width: 60%;
@@ -485,4 +572,91 @@ hr {
   font-size: 12px;
   margin-top: 10px;
   font-weight: 400;
+}
+
+.p-section-blog {
+  width: 100%;
+  background-color: #F0F1F3;
+}
+
+.p-setion-blog_container {
+  padding-top: 100px;
+}
+
+.p-section-blog_container-heading {
+  text-align: center;
+  font-size: 35px;
+}
+
+.p-section-blog_container-card {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 100px;
+}
+
+.p-section-blog_container-card-layout {
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.p-section-blog_container-card-layout:hover {
+  opacity: 0.8;
+}
+
+.p-section-blog_container-card-layout-imge {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.p-section-blog_container-card-layout_content {
+  padding: 30px;
+}
+
+
+.p-section-blog_container-card-layout_content_heading-small {
+  font-size: 14px;
+  color: #697484;
+  font-weight: 400;
+}
+
+.p-section-blog_container-card-layout_content_heading-big {
+  font-size: 18px;
+  font-weight: 500;
+  color: #132238;
+  margin: 10px auto;
+}
+
+.p-section-blog_container-card-layout_content-text {
+  font-size: 15px;
+  color: #424E60;
+  margin-bottom: 10px;
+}
+
+.p-section-blog_container-card-layout_content-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 24px;
+  gap: 12px;
+  width: 170px;
+  height: 48px;
+  background: #fff;
+  text-transform: uppercase;
+  color: #1777E5;
+  border: 2px solid #E8F1FC;  
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.p-section-blog_container-card-layout__content-button-icon {
+  width: 24px;
+  height: 24px;
 }
