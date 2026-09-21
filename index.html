@@ -112,6 +112,12 @@
         </div>
       </div>
     </section>
+    <!-- dark mode -->
+    <div class="dtm-box" id="dtm-box">
+      <div class="dtm-switch" onclick="toggle()">
+        <img id="switch-icon" src="images/Light_Mode.svg" alt="icon" loading="lazy">
+      </div>
+    </div>
     <!-- company -->
     <section class="p-section__company l-wrapper">
       <h2 class="p-section__company-heading">
@@ -635,6 +641,32 @@
       <strong class="l-footer__copyright">&#169; 2022 Winston Potter</strong>
     </div>
   </footer>
+  <script>
+    const dmtKey = 'dmt-theme';
+
+    const iconLight = "images/Light_Mode.svg";
+    const iconDark = "images/Dark_Mode.svg";
+
+    function toggle() {
+      const body = document.body;
+      const icon = document.getElementById('switch-icon');
+
+      const isDark = body.classList.toggle('night');
+
+      icon.src = isDark ? iconDark : iconLight;
+
+      localStorage.setItem(dmtKey, isDark ? 'dark' : 'light');
+    }
+
+    (function () {
+      const saved = localStorage.getItem(dmtKey);
+      if (saved === 'dark') {
+        document.body.classList.add('night');
+        document.getElementById('switch-icon').src = iconDark;
+      }
+    })();
+
+  </script>
 </body>
 
 </html>

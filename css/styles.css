@@ -122,10 +122,6 @@ nav {
   gap: 50px;
 }
 
-.p-section-keyvisual__content {
-  /* margin-right: 100px; */
-}
-
 .p-section-keyvisual__content-frame {
   margin-bottom: 20px;
 }
@@ -564,7 +560,7 @@ hr {
 }
 
 .p-section-feedback_testimonial-button {
-  background: #fff;
+  background: transparent;
 }
 
 .p-section-feedback_testimonial-image {
@@ -988,6 +984,39 @@ nav {
   left: 0;
 }
 
+/* --------------------Dark Mode--------------------- */
+body {
+  transition: background 0.4s, color 0.4s;
+}
+
+body.night {
+  background: #000;
+  color: #fff;
+}
+
+.dtm-box {
+  background: transparent;
+}
+
+.dtm-switch {
+  position: absolute;
+  cursor: pointer;
+  transition: background 0.3s;
+  right: 0;
+  margin: 15px 15px 0 0;
+}
+
+body.night .dmt-switch {
+  background: #067ef5;
+}
+
+#switch-icon {
+  z-index: 1;
+  transition: transform 0.3s;
+  pointer-events: none;
+}
+
+
 /*--------------------- Responsive Mobile---------- */
 @media (max-width: 768px) {
   .checkbtn {
@@ -1053,8 +1082,6 @@ nav {
     flex-direction: column;
     gap: 20px;
   }
-
-  .p-section__company__navigation {}
 
   .p-section-experiences-wrapper {
     display: flex;
