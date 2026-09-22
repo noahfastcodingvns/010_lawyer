@@ -1,672 +1,1002 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>No10 - Lawyer</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700;800;900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>No10 - Lawyer</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto:wght@100..900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-</head>
-
-<body>
-  <!-- Header -->
-  <header class="l-header">
-    <div class="l-wrapper l-header__wrapper">
-      <a href="#" class="l-header__logo">
-        <img src="images/Logo1.svg" alt="Logo" class="l-header__logo--image">
-      </a>
-      <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-          <i class="fa-solid fa-bars c-checkbox"></i>
-        </label>
-        <ul class="l-header__naviagtion">
-          <li class="l-header__naviagtion-item">
-            <a href="#" class="l-header__naviagtion-link l-header-active">
-              Home
-            </a>
-          </li>
-          <li class="l-header__naviagtion-item">
-            <a href="#" class="l-header__naviagtion-link">
-              About
-            </a>
-          </li>
-          <li class="l-header__naviagtion-item">
-            <a href="#" class="l-header__naviagtion-link">
-              Testimonial
-            </a>
-          </li>
-          <li class="l-header__naviagtion-item">
-            <a href="#" class="l-header__naviagtion-link">
-              Project
-            </a>
-          </li>
-          <li class="l-header__naviagtion-item">
-            <a href="#" class="l-header__naviagtion-link">
-              Services
-            </a>
-          </li>
-          <li class="l-header__naviagtion-item">
-            <a href="#" class="l-header__naviagtion-link">
-              Article
-            </a>
-          </li>
-          <li class="l-header__naviagtion-item">
-            <a href="#" class="l-header__naviagtion-link">
-              Contact
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="l-header__social">
-        <li class="l-header__social-item">
-          <a href="#" class="l-header__social-link" target="_blank" rel="noopener">
-            <img src="images/facebook-1.svg" alt="Facebook" class="l-header-social__img">
-          </a>
-          <a href="#" class="l-header__social-link" target="_blank" rel="noopener">
-            <img src="images/x-1.svg" alt="X" class="l-header-social__img">
-          </a>
-        </li>
-        <li class="l-header__social-item">
-          <a href="#" class="l-header__social-link" target="_blank" rel="noopener">
-            <img src="images/linkedin-1.svg" alt="Linkedin" class="l-header-social__img">
-          </a>
-          <a href="#" class="l-header__social-link" target="_blank" rel="noopener">
-            <img src="images/medium-1.svg" alt="Medium" class="l-header-social__img">
-          </a>
-        </li>
-      </ul>
-    </div>
-  </header>
-  <!-- Main -->
-  <main class="main-content">
-    <!-- keyvisual -->
-    <section class="p-section-keyvisual">
-      <div class="p-section-keyvisual__layout l-wrapper">
-        <div class="p-section-keyvisual__content">
-          <div class="p-section-keyvisual__content-frame">
-            <h1 class="p-section-keyvisual__content-heading">Hello, I’m a professional lawyer for almost <strong>13
-                years.</strong></h1>
-            <p class="p-section-keyvisual__content-text">Phasellus malesuada nibh sit amet leo blandit finibus. Ut lorem
-              neque, egestas vel nisi ut, pharetra venenatis enim.</p>
-          </div>
-          <div class="p-section-keyvisual__conntent-button">
-            <button class="p-section-keyvisual__content-book">
-              Book appointments <img src="/images/ArrowRight-1.svg" alt="Image Arrow Right"
-                class="p-section-keyvisual__content-book-image">
-            </button>
-            <button class="p-section-keyvisual__content-play">
-              <img src="images/PlayCircle.svg" alt="Image Play" class="p-section-keyvisual__content-play-image">
-              Customer feedback
-            </button>
-          </div>
-        </div>
-        <div class="p-section-keyvisual__img">
-          <img src="images/Image1.png" alt="Image person" class="p-section-top-keyvisual__img-person">
-        </div>
-      </div>
-    </section>
-    <!-- dark mode -->
-    <div class="dtm-box" id="dtm-box">
-      <div class="dtm-switch" onclick="toggle()">
-        <img id="switch-icon" src="images/Light_Mode.svg" alt="icon" loading="lazy">
-      </div>
-    </div>
-    <!-- company -->
-    <section class="p-section__company l-wrapper">
-      <h2 class="p-section__company-heading">
-        I helped <span>280+ peoples</span> to win <br> their fair and they are happy 😀.
-      </h2>
-      <ul class="p-section__company__navigation">
-        <li class="p-section__company__navigation-item">
-          <a href="#" class="p-section__company__navigation-link" target="_blank" rel="noopener">
-            <img src="images/amazon.svg" alt="Amazon" class="p-section__company__navigation-item-image">
-          </a>
-        </li>
-        <li class="p-section__company__navigation-item">
-          <a href="#" class="p-section__company__navigation-link" target="_blank" rel="noopener">
-            <img src="images/dribbble.svg" alt="Dribble" class="p-section__company__navigation-item-image">
-          </a>
-        </li>
-        <li class="p-section__company__navigation-item">
-          <a href="#" class="p-section__company__navigation-link" target="_blank" rel="noopener">
-            <img src="images/google.svg" alt="Google" class="p-section__company__navigation-item-image">
-          </a>
-        </li>
-        <li class="p-section__company__navigation-item">
-          <a href="#" class="p-section__company__navigation-link" target="_blank" rel="noopener">
-            <img src="images/linkedin.svg" alt="Linkein" class="p-section__company__navigation-item-image">
-          </a>
-        </li>
-        <li class="p-section__company__navigation-item">
-          <a href="#" class="p-section__company__navigation-link" target="_blank" rel="noopener">
-            <img src="images/medium.svg" alt="Medium" class="p-section__company__navigation-item-image">
-          </a>
-        </li>
-        <li class="p-section__company__navigation-item">
-          <a href="#" class="p-section__company__navigation-link" target="_blank" rel="noopener">
-            <img src="images/microsoft.svg" alt="Microsoft" class="p-section__company__navigation-item-image">
-          </a>
-        </li>
-      </ul>
-    </section>
-    <!-- experiences -->
-    <section class="p-section-experiences l-wrapper">
-      <div class="p-section-experiences-heading">
-        <h2 class="p-section-experiences-heading__big">
-          My Experiences
-        </h2>
-        <p class="p-section-experiences-heading__small">
-          Sed ac posuere neque, scelerisque porta nulla. <br> Aliquam erat volutpat, Nulla in mi malesuada.
-        </p>
-      </div>
-      <div class="p-section-experiences-wrapper">
-        <img src="images/Image1.jpg" alt="Image" class="p-section-experiences-wrapper__imge">
-        <div class="p-section-experiences-wrapper__content">
-          <div class="p-section-experiences-wrapper__content-experience">
-            <div class="p-section-experiences-wrapper__content-title">
-              <p class="p-section-experiences-wrapper__content-title-big">
-                Supreme & High Court
-              </p>
-              <p class="p-section-experiences-wrapper__content-title-small">
-                Jan, 2016 to Jan, 2021
-              </p>
-            </div>
-            <div class="p-section-experiences-wrapper__content-text">
-              <h3 class="p-section-experiences-wrapper__content-text-big">
-                Head Laywer of Google and Apple
-              </h3>
-              <p class="p-section-experiences-wrapper__content-text-small">
-                Duis magna risus, convallis vel purus eu, sollicitudin volutpat velit. Duis fringilla nibh urna, quis
-                rutrum nisl hendrerit quis.
-              </p>
-            </div>
-          </div>
-          <hr>
-          <div class="p-section-experiences-wrapper__content-experience">
-            <div class="p-section-experiences-wrapper__content-title">
-              <p class="p-section-experiences-wrapper__content-title-big">
-                High Court
-              </p>
-              <p class="p-section-experiences-wrapper__content-title-small">
-                Jan, 2016 to Jan, 2021
-              </p>
-            </div>
-            <div class="p-section-experiences-wrapper__content-text">
-              <h3 class="p-section-experiences-wrapper__content-text-big">
-                Criminal Defense Lawyer
-              </h3>
-              <p class="p-section-experiences-wrapper__content-text-small">
-                Duis magna risus, convallis vel purus eu, sollicitudin volutpat velit. Duis fringilla nibh urna, quis
-                rutrum nisl hendrerit quis.
-              </p>
-            </div>
-          </div>
-          <hr>
-          <div class="p-section-experiences-wrapper__content-experience">
-            <div class="p-section-experiences-wrapper__content-title">
-              <p class="p-section-experiences-wrapper__content-title-big">
-                District Court
-              </p>
-              <p class="p-section-experiences-wrapper__content-title-small">
-                Jan, 2016 to Jan, 2021
-              </p>
-            </div>
-            <div class="p-section-experiences-wrapper__content-text">
-              <h3 class="p-section-experiences-wrapper__content-text-big">
-                Divorce Lawyer
-              </h3>
-              <p class="p-section-experiences-wrapper__content-text-small">
-                Vestibulum placerat at ligula id sollicitudin. Aenean vitae erat nec enim congue pretium.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Fact -->
-    <section class="p-section-fact">
-      <div class="p-section-fact__container l-wrapper">
-        <ul class="p-section-fact__container-ul">
-          <li class="p-section-fact__container-li">
-            <img src="images/Stack.svg" alt="Stack" class="p-section-fact__container-img">
-            <div class="p-section-fact__container-content">
-              <p class="p-section-fact__container-content-big">
-                13+
-              </p>
-              <h3 class="p-section-fact__container-content-small">
-                Years of experience
-              </h3>
-            </div>
-          </li>
-          <li class="p-section-fact__container-li">
-            <img src="images/Briefcase.svg" alt="Stack" class="p-section-fact__container-img">
-            <div class="p-section-fact__container-content">
-              <p class="p-section-fact__container-content-big">
-                98.5%
-              </p>
-              <h3 class="p-section-fact__container-content-small">
-                Client satisfaction
-              </h3>
-            </div>
-          </li>
-          <li class="p-section-fact__container-li">
-            <img src="images/SmileyWink.svg" alt="Stack" class="p-section-fact__container-img">
-            <div class="p-section-fact__container-content">
-              <p class="p-section-fact__container-content-big">
-                279+
-              </p>
-              <h3 class="p-section-fact__container-content-small">
-                Happy clients
-              </h3>
-            </div>
-          </li>
-          <li class="p-section-fact__container-li">
-            <img src="images/Medal.svg" alt="Stack" class="p-section-fact__container-img">
-            <div class="p-section-fact__container-content">
-              <p class="p-section-fact__container-content-big">
-                47+
-              </p>
-              <h3 class="p-section-fact__container-content-small">
-                Awards
-              </h3>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- About -->
-    <section class="p-section-about">
-      <div class="p-section-about__container l-wrapper">
-        <img src="images/Image4.jpg" alt="Image Person" class="p-section-about__container-img">
-        <div class="p-section-about__container_content">
-          <h2 class="p-section-about__container__content-big">
-            I'm Winston Potter with a highly dedicated & hard working personality.
-          </h2>
-          <p class="p-section-about__container__content-small">
-            Pellentesque vitae nisi eget nisi dapibus accumsan. Pellentesque habitant morbi tristique senectus et netus
-            et malesuada fames ac turpis egestas. Fusce sit amet leo sem. Sed ac posuere neque, scelerisque porta nulla.
-            Aliquam erat volutpat.
-          </p>
-          <button class="p-section-about__container__content-button">
-            <img src="images/DownloadSimple.svg" alt="Download" class="p-section-about__container__content-button-icon">
-            Download Resume
-          </button>
-        </div>
-      </div>
-    </section>
-    <!-- Education -->
-    <section class="p-section-education l-wrapper">
-      <div class="p-section-education__heading">
-        <h3 class="p-section-education__heading-big">
-          My Education & Awards
-        </h3>
-        <p class="p-section-education__heading-small">
-          Sed ac posuere neque, scelerisque porta nulla. Aliquam erat volutpat. Nulla <br> in mi malesuada, luctus nibh
-          quis,
-          rutrum arcu.
-        </p>
-      </div>
-
-      <div class="p-section-edication__content">
-        <div class="p-section-education__heading-left">
-          <div class="p-section-education__heading-left__container">
-            <img src="images/king.svg" alt="King" class="p-section-education__heading-left__container-icon">
-            <div class="p-section-education__heading-left__container-content">
-              <p class="p-section-education__heading-left__container-content-small">
-                2016 to 2021 &#8226; University of Oxford
-              </p>
-              <h4 class="p-section-education__heading-left__container-content-big">
-                Bachelor of Laws (LLB)
-              </h4>
-              <p class="p-section-education__heading-left__container-content-text">
-                Mauris efficitur, felis eu commodo vehicula, arcu nunc vehicula nulla, at commodo tortor ligula id
-                sapien.
-              </p>
-            </div>
-          </div>
-          <div class="p-section-education__heading-left__container">
-            <img src="images/tv.svg" alt="TV" class="p-section-education__heading-left__container-icon">
-            <div class="p-section-education__heading-left__container-content">
-              <p class="p-section-education__heading-left__container-content-small">
-                2012 to 2016 &#8226; University of Cambridge
-              </p>
-              <h4 class="p-section-education__heading-left__container-content-big">
-                Bachelor of Science and Engineering
-              </h4>
-              <p class="p-section-education__heading-left__container-content-text">
-                Donec ut ex eu libero euismod dapibus id quis ipsum. Phasellus non feugiat turpis, non gravida.
-              </p>
-            </div>
-          </div>
-          <div class="p-section-education__heading-left__container">
-            <img src="images/cup.svg" alt="Cup" class="p-section-education__heading-left__container-icon">
-            <div class="p-section-education__heading-left__container-content">
-              <p class="p-section-education__heading-left__container-content-small">
-                2010 to 2012 &#8226; University of Cambridge
-              </p>
-              <h4 class="p-section-education__heading-left__container-content-big">
-                Bachelor of Communication
-              </h4>
-              <p class="p-section-education__heading-left__container-content-text">
-                Donec ut ex eu libero euismod dapibus id quis ipsum. Phasellus non feugiat turpis, non gravida.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="p-section-education__heading-right">
-          <div class="p-section-education__heading-right__container">
-            <img src="images/Image2.jpg" alt="Cup" class="p-section-education__heading-right__container-icon">
-            <div class="p-section-education__heading-right__container-content">
-              <p class="p-section-education__heading-right__container-content-small">
-                Dec 7, 2019 &#8226; Awwwards
-              </p>
-              <h5 class="p-section-education__heading-right__container-content-big">
-                Best Laywer of the Month.
-              </h5>
-              <p class="p-section-education__heading-right__container-content-text">
-                Nulla et volutpat est, ac mattis urna. Mauris rhoncus massa et gravida tristique. Praesent iaculis
-                pulvinar convallis.
-              </p>
-            </div>
-          </div>
-          <div class="p-section-education__heading-right__container">
-            <img src="images/Image3.jpg" alt="Cup" class="p-section-education__heading-right__container-icon">
-            <div class="p-section-education__heading-right__container-content">
-              <p class="p-section-education__heading-right__container-content-small">
-                Dec 7, 2019 &#8226; Awwwards
-              </p>
-              <h5 class="p-section-education__heading-right__container-content-big">
-                Top 40 Young Lawyers Awards.
-              </h5>
-              <p class="p-section-education__heading-right__container-content-text">
-                Duis magna risus, convallis vel purus eu, sollicitudin volutpat velit. Duis fringilla nibh urna, quis
-                rutrum nisl hendrerit quis.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <hr class="hr-border">
-    <!-- Feedback -->
-    <section class="p-section-feedback">
-      <div class="p-section-education__heading">
-        <h3 class="p-section-education__heading-big">
-          My clients feedback
-        </h3>
-        <p class="p-section-education__heading-small">
-          Sed ac posuere neque, scelerisque porta nulla. Aliquam erat volutpat. Nulla <br> in mi malesuada, luctus nibh
-          quis,
-          rutrum arcu.
-        </p>
-      </div>
-      <div class="p-section-feedback_testimonial l-wrapper">
-        <button class="p-section-feedback_testimonial-button">
-          <img src="images/arrow_button-1.svg" alt="Button" class="p-section-feedback_testimonial-image">
-        </button>
-        <div class="p-section-feedback_testimonial-content">
-          <div class="p-section-feedback__testimonial-quote">
-            <img src="images/Quote.svg" alt="Quote" class="p-section-feedback__testimonial-quote-image">
-          </div>
-          <p class="p-section-feedback__testimonial-text">
-            “Duis tempor ultrices elit sollicitudin aliquet. Nulla facilisi. Donec sit amet nunc eros. Etiam et nisi in
-            diam ultrices luctus in a dui. Mauris in sem aliquet ligula convallis vestibulum. Etiam non erat aliquam,
-            lacinia nis.”
-          </p>
-          <div class="p-section-feedback__testimonial-name">
-            <p class="p-section-feedback__testimonial-name-big">
-              Cameron Williamson
-            </p>
-            <p class="p-section-feedback__testimonial-name-small">
-              Ceo & Founder of Google
-            </p>
-          </div>
-        </div>
-        <button class="p-section-feedback_testimonial-button">
-          <img src="images/arrow_button-1.svg" alt="Button" class="p-section-feedback_testimonial-image">
-        </button>
-      </div>
-    </section>
-    <!-- Blog -->
-    <section class="p-section-blog">
-      <div class="p-setion-blog_container l-wrapper">
-        <h2 class="p-section-blog_container-heading">
-          Blog & News
-        </h2>
-        <div class="p-section-blog_container-card">
-          <div class="p-section-blog_container-card-layout">
-            <img src="images/blog-1.jpg" alt="Blog image" class="p-section-blog_container-card-layout-imge">
-            <div class="p-section-blog_container-card-layout_content">
-              <div class="p-section-blog_container-card-layout_content_heading">
-                <p class="p-section-blog_container-card-layout_content_heading-small">
-                  22 Oct, 2020 &#x2F; 246 Comments
-                </p>
-                <p class="p-section-blog_container-card-layout_content_heading-big">
-                  Duis magna risus, convallis vel purus eu, sollicitudin volutpat velit.
-                </p>
-              </div>
-              <p class="p-section-blog_container-card-layout_content-text">
-                Maecenas blandit auctor tempor. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-              </p>
-              <button class="p-section-blog_container-card-layout_content-button">
-                Read more <img src="images/ArrowRight-2.svg" alt="Arrow Right"
-                  class="p-section-blog_container-card-layout__content-button-icon">
-              </button>
-            </div>
-          </div>
-          <div class="p-section-blog_container-card-layout">
-            <img src="images/blog-2.jpg" alt="Blog image" class="p-section-blog_container-card-layout-imge">
-            <div class="p-section-blog_container-card-layout_content">
-              <div class="p-section-blog_container-card-layout_content_heading">
-                <p class="p-section-blog_container-card-layout_content_heading-small">
-                  8 Sep, 2020 &#x2F; 246 Comments
-                </p>
-                <p class="p-section-blog_container-card-layout_content_heading-big">
-                  Donec ut ex eu libero euismod dapibus id quis ipsum.
-                </p>
-              </div>
-              <p class="p-section-blog_container-card-layout_content-text">
-                Phasellus non feugiat turpis, non gravida lorem. Nulla fermentum odio in dolor dapibus, ac eleifend
-                lectus ullamcorper.
-              </p>
-              <button class="p-section-blog_container-card-layout_content-button">
-                Read more <img src="images/ArrowRight-2.svg" alt="Arrow Right"
-                  class="p-section-blog_container-card-layout__content-button-icon">
-              </button>
-            </div>
-          </div>
-          <div class="p-section-blog_container-card-layout">
-            <img src="images/blog-3.jpg" alt="Blog image" class="p-section-blog_container-card-layout-imge">
-            <div class="p-section-blog_container-card-layout_content">
-              <div class="p-section-blog_container-card-layout_content_heading">
-                <p class="p-section-blog_container-card-layout_content_heading-small">
-                  24 May, 2020 &#x2F; 246 Comments
-                </p>
-                <p class="p-section-blog_container-card-layout_content_heading-big">
-                  Maecenas congue cursus metus eget bibendum phasellus dign.
-                </p>
-              </div>
-              <p class="p-section-blog_container-card-layout_content-text">
-                Praesent semper enim at lacus sagittis, non semper eros ullamcorper. Duis id elemtum nisl, eu tincidunt
-                nisl.
-              </p>
-              <button class="p-section-blog_container-card-layout_content-button">
-                Read more <img src="images/ArrowRight-2.svg" alt="Arrow Right"
-                  class="p-section-blog_container-card-layout__content-button-icon">
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Contact -->
-    <section class="p-section-contact l-wrapper">
-      <div class="p-section-contact_info">
-        <div class="p-section-contact_info_heading">
-          <h3 class="p-section-contact_info_heading-big">
-            Are you facing any problem, Book an appointment!
-          </h3>
-          <p class="p-section-contact_info_heading-small">
-            Aliquam neque diam, tincidunt a lacinia quis, imperdiet quis quam. Phasellus id libero purus. Fusce
-            vestibulum luctus ve.
-          </p>
-        </div>
-        <div class="p-section-contact_info_content">
-          <div class="p-section-contact_info_content_container">
-            <img src="images/Envelope.svg" alt="Eveloper" class="p-section-contact_info_content_container-icon">
-            <div class="p-section-contact_info_content_container_content">
-              <p class="p-section-contact_info_content_container_content-small">
-                Chat with me
-              </p>
-              <p class="p-section-contact_info_content_container_content-big">
-                kevin.gilbert.com
-              </p>
-            </div>
-          </div>
-          <div class="p-section-contact_info_content_container">
-            <img src="images/PhoneCall.svg" alt="Phone Call" class="p-section-contact_info_content_container-icon">
-            <div class="p-section-contact_info_content_container_content">
-              <p class="p-section-contact_info_content_container_content-small">
-                Call Me
-              </p>
-              <p class="p-section-contact_info_content_container_content-big">
-                +1 202 555 0190
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="p-section_contact_book">
-        <div class="p-section_contact_book_content">
-          <h4 class="p-section_contact_book_content-big">
-            Book Appointment With Me.
-          </h4>
-          <p class="p-section_contact_book_content-small">
-            Do you fancy saying hi to me or do you want to get started with your project and you need my help? Feel free
-            to contact me. I will reply within 48 hours.
-          </p>
-        </div>
-        <form action="#" class="p-section_contact_form">
-          <div class="c-section_contact_form_name">
-            <input type="text" placeholder="Full Name" id="full-name" name="name">
-            <input type="email" id="email" name="email" placeholder="Email Adress">
-          </div>
-          <input type="text" id="subject" name="subject" placeholder="Subject">
-          <div class="c-section_contact_form_name">
-            <input type="text" placeholder="Date" id="date" name="date" onfocus="this.type='date'"
-              onblur="if(!this.value)this.type='text'">
-            <input type="time" id="time" name="time" class="time-placeholder">
-          </div>
-          <textarea name="message" id="message" placeholder="Message"></textarea>
-        </form>
-
-        <button class="p-section_contact__button">
-          Book appointment <img src="images/ArrowRight-1.svg" alt="Arrow Right" class="p-section_contact__button-icon">
-        </button>
-      </div>
-    </section>
-  </main>
-  <footer class="l-footer">
-    <div class="l-footer-layout l-wrapper">
-      <div class="l-wrapper l-footer__wrap">
-        <a href="#" class="l-footer__logo">
-          <img src="images/Logo2.svg" alt="Logo" class="l-footer__logo--image">
+  <body>
+    <!-- Header -->
+    <header class="l-header">
+      <div class="l-wrapper l-header__wrapper">
+        <a href="#" class="l-header__logo">
+          <img
+            src="images/Logo1.svg"
+            alt="Logo"
+            class="l-header__logo--image"
+          />
         </a>
         <nav>
-          <ul class="l-footer__navigation">
-            <li class="l-footer__naviagtion-item">
-              <a href="#" class="l-footer__naviagtion-link ">
+          <input type="checkbox" id="check" />
+          <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars c-checkbox"></i>
+          </label>
+          <ul class="l-header__naviagtion">
+            <li class="l-header__naviagtion-item">
+              <a href="#" class="l-header__naviagtion-link l-header-active">
                 Home
               </a>
             </li>
-            <li class="l-footer__naviagtion-item">
-              <a href="#" class="l-footer__naviagtion-link">
-                About
-              </a>
+            <li class="l-header__naviagtion-item">
+              <a href="#" class="l-header__naviagtion-link"> About </a>
             </li>
-            <li class="l-footer__naviagtion-item">
-              <a href="#" class="l-footer__naviagtion-link l-footer-active">
-                Services
-              </a>
+            <li class="l-header__naviagtion-item">
+              <a href="#" class="l-header__naviagtion-link"> Testimonial </a>
             </li>
-            <li class="l-footer__naviagtion-item">
-              <a href="#" class="l-footer__naviagtion-link">
-                Project
-              </a>
+            <li class="l-header__naviagtion-item">
+              <a href="#" class="l-header__naviagtion-link"> Project </a>
             </li>
-            <li class="l-footer__naviagtion-item">
-              <a href="#" class="l-footer__naviagtion-link">
-                Services
-              </a>
+            <li class="l-header__naviagtion-item">
+              <a href="#" class="l-header__naviagtion-link"> Services </a>
             </li>
-            <li class="l-footer__naviagtion-item">
-              <a href="#" class="l-footer__naviagtion-link">
-                Article
-              </a>
+            <li class="l-header__naviagtion-item">
+              <a href="#" class="l-header__naviagtion-link"> Article </a>
             </li>
-            <li class="l-footer__naviagtion-item">
-              <a href="#" class="l-footer__naviagtion-link">
-                Contact
-              </a>
+            <li class="l-header__naviagtion-item">
+              <a href="#" class="l-header__naviagtion-link"> Contact </a>
             </li>
           </ul>
         </nav>
-        <ul class="l-footer__social">
-          <li class="l-footer__social-item">
-            <a href="#" class="l-footer__social-link" target="_blank" rel="noopener">
-              <img src="images/facebook-2.svg" alt="Facebook" class="l-footer-social__img">
+        <ul class="l-header__social">
+          <li class="l-header__social-item">
+            <a
+              href="#"
+              class="l-header__social-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="images/facebook-1.svg"
+                alt="Facebook"
+                class="l-header-social__img"
+              />
             </a>
-            <a href="#" class="l-footer__social-link" target="_blank" rel="noopener">
-              <img src="images/x-2.svg" alt="X" class="l-footer-social__img">
+            <a
+              href="#"
+              class="l-header__social-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <img src="images/x-1.svg" alt="X" class="l-header-social__img" />
             </a>
           </li>
-          <li class="l-footer__social-item">
-            <a href="#" class="l-footer__social-link" target="_blank" rel="noopener">
-              <img src="images/linkedin-2.svg" alt="Linkedin" class="l-footer-social__img">
+          <li class="l-header__social-item">
+            <a
+              href="#"
+              class="l-header__social-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="images/linkedin-1.svg"
+                alt="Linkedin"
+                class="l-header-social__img"
+              />
             </a>
-            <a href="#" class="l-footer__social-link" target="_blank" rel="noopener">
-              <img src="images/medium-2.svg" alt="Medium" class="l-footer-social__img">
+            <a
+              href="#"
+              class="l-header__social-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="images/medium-1.svg"
+                alt="Medium"
+                class="l-header-social__img"
+              />
             </a>
           </li>
         </ul>
       </div>
-      <hr class="l-footer__hr">
-      <strong class="l-footer__copyright">&#169; 2022 Winston Potter</strong>
-    </div>
-  </footer>
-  <script>
-    const dmtKey = 'dmt-theme';
+    </header>
+    <!-- Main -->
+    <main class="main-content">
+      <!-- keyvisual -->
+      <section class="p-section-keyvisual">
+        <div class="p-section-keyvisual__layout l-wrapper">
+          <div class="p-section-keyvisual__content">
+            <div class="p-section-keyvisual__content-frame">
+              <h1 class="p-section-keyvisual__content-heading">
+                Hello, I’m a professional lawyer for almost
+                <strong>13 years.</strong>
+              </h1>
+              <p class="p-section-keyvisual__content-text">
+                Phasellus malesuada nibh sit amet leo blandit finibus. Ut lorem
+                neque, egestas vel nisi ut, pharetra venenatis enim.
+              </p>
+            </div>
+            <div class="p-section-keyvisual__conntent-button">
+              <button class="p-section-keyvisual__content-book">
+                <a href="#" class="c-button_book">
+                  Book appointments
+                  <img
+                    src="images/ArrowRight-1.svg"
+                    alt="Arrow Right"
+                    class="p-section-keyvisual_content-book-image"
+                  />
+                </a>
+              </button>
+              <button class="p-section-keyvisual__content-play">
+                <a href="#" class="c-button_play">
+                  <img
+                    src="images/PlayCircle.svg"
+                    alt="Image Play"
+                    class="p-section-keyvisual__content-play-image"
+                  />
+                  Customer feedback
+                </a>
+              </button>
+            </div>
+          </div>
+          <div class="p-section-keyvisual__img">
+            <img
+              src="images/Image1.png"
+              alt="Image person"
+              class="p-section-top-keyvisual__img-person"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- dark mode -->
+      <div class="dtm-box" id="dtm-box">
+        <div class="dtm-switch" onclick="toggle()">
+          <img
+            id="switch-icon"
+            src="images/Light_Mode.svg"
+            alt="icon"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <!-- company -->
+      <section class="p-section__company l-wrapper">
+        <h2 class="p-section__company-heading">
+          I helped <span>280+ peoples</span> to win <br />
+          their fair and they are happy 😀.
+        </h2>
+        <ul class="p-section__company__navigation">
+          <li class="p-section__company__navigation-item">
+            <a
+              href="#"
+              class="p-section__company__navigation-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="images/amazon.svg"
+                alt="Amazon"
+                class="p-section__company__navigation-item-image"
+              />
+            </a>
+          </li>
+          <li class="p-section__company__navigation-item">
+            <a
+              href="#"
+              class="p-section__company__navigation-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="images/dribbble.svg"
+                alt="Dribble"
+                class="p-section__company__navigation-item-image"
+              />
+            </a>
+          </li>
+          <li class="p-section__company__navigation-item">
+            <a
+              href="#"
+              class="p-section__company__navigation-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="images/google.svg"
+                alt="Google"
+                class="p-section__company__navigation-item-image"
+              />
+            </a>
+          </li>
+          <li class="p-section__company__navigation-item">
+            <a
+              href="#"
+              class="p-section__company__navigation-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="images/linkedin.svg"
+                alt="Linkein"
+                class="p-section__company__navigation-item-image"
+              />
+            </a>
+          </li>
+          <li class="p-section__company__navigation-item">
+            <a
+              href="#"
+              class="p-section__company__navigation-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="images/medium.svg"
+                alt="Medium"
+                class="p-section__company__navigation-item-image"
+              />
+            </a>
+          </li>
+          <li class="p-section__company__navigation-item">
+            <a
+              href="#"
+              class="p-section__company__navigation-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="images/microsoft.svg"
+                alt="Microsoft"
+                class="p-section__company__navigation-item-image"
+              />
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- experiences -->
+      <section class="p-section-experiences l-wrapper">
+        <div class="p-section-experiences-heading">
+          <h2 class="p-section-experiences-heading__big">My Experiences</h2>
+          <p class="p-section-experiences-heading__small">
+            Sed ac posuere neque, scelerisque porta nulla. <br />
+            Aliquam erat volutpat, Nulla in mi malesuada.
+          </p>
+        </div>
+        <div class="p-section-experiences-wrapper">
+          <img
+            src="images/Image1.jpg"
+            alt="Image"
+            class="p-section-experiences-wrapper__imge"
+          />
+          <div class="p-section-experiences-wrapper__content">
+            <div class="p-section-experiences-wrapper__content-experience">
+              <div class="p-section-experiences-wrapper__content-title">
+                <p class="p-section-experiences-wrapper__content-title-big">
+                  Supreme & High Court
+                </p>
+                <p class="p-section-experiences-wrapper__content-title-small">
+                  Jan, 2016 to Jan, 2021
+                </p>
+              </div>
+              <div class="p-section-experiences-wrapper__content-text">
+                <h3 class="p-section-experiences-wrapper__content-text-big">
+                  Head Laywer of Google and Apple
+                </h3>
+                <p class="p-section-experiences-wrapper__content-text-small">
+                  Duis magna risus, convallis vel purus eu, sollicitudin
+                  volutpat velit. Duis fringilla nibh urna, quis rutrum nisl
+                  hendrerit quis.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div class="p-section-experiences-wrapper__content-experience">
+              <div class="p-section-experiences-wrapper__content-title">
+                <p class="p-section-experiences-wrapper__content-title-big">
+                  High Court
+                </p>
+                <p class="p-section-experiences-wrapper__content-title-small">
+                  Jan, 2016 to Jan, 2021
+                </p>
+              </div>
+              <div class="p-section-experiences-wrapper__content-text">
+                <h3 class="p-section-experiences-wrapper__content-text-big">
+                  Criminal Defense Lawyer
+                </h3>
+                <p class="p-section-experiences-wrapper__content-text-small">
+                  Duis magna risus, convallis vel purus eu, sollicitudin
+                  volutpat velit. Duis fringilla nibh urna, quis rutrum nisl
+                  hendrerit quis.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div class="p-section-experiences-wrapper__content-experience">
+              <div class="p-section-experiences-wrapper__content-title">
+                <p class="p-section-experiences-wrapper__content-title-big">
+                  District Court
+                </p>
+                <p class="p-section-experiences-wrapper__content-title-small">
+                  Jan, 2016 to Jan, 2021
+                </p>
+              </div>
+              <div class="p-section-experiences-wrapper__content-text">
+                <h3 class="p-section-experiences-wrapper__content-text-big">
+                  Divorce Lawyer
+                </h3>
+                <p class="p-section-experiences-wrapper__content-text-small">
+                  Vestibulum placerat at ligula id sollicitudin. Aenean vitae
+                  erat nec enim congue pretium.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fact -->
+      <section class="p-section-fact">
+        <div class="p-section-fact__container l-wrapper">
+          <ul class="p-section-fact__container-ul">
+            <li class="p-section-fact__container-li">
+              <img
+                src="images/Stack.svg"
+                alt="Stack"
+                class="p-section-fact__container-img"
+              />
+              <div class="p-section-fact__container-content">
+                <p class="p-section-fact__container-content-big">13+</p>
+                <h2 class="p-section-fact__container-content-small">
+                  Years of experience
+                </h2>
+              </div>
+            </li>
+            <li class="p-section-fact__container-li">
+              <img
+                src="images/Briefcase.svg"
+                alt="Stack"
+                class="p-section-fact__container-img"
+              />
+              <div class="p-section-fact__container-content">
+                <p class="p-section-fact__container-content-big">98.5%</p>
+                <h2 class="p-section-fact__container-content-small">
+                  Client satisfaction
+                </h2>
+              </div>
+            </li>
+            <li class="p-section-fact__container-li">
+              <img
+                src="images/SmileyWink.svg"
+                alt="Stack"
+                class="p-section-fact__container-img"
+              />
+              <div class="p-section-fact__container-content">
+                <p class="p-section-fact__container-content-big">279+</p>
+                <h2 class="p-section-fact__container-content-small">
+                  Happy clients
+                </h2>
+              </div>
+            </li>
+            <li class="p-section-fact__container-li">
+              <img
+                src="images/Medal.svg"
+                alt="Stack"
+                class="p-section-fact__container-img"
+              />
+              <div class="p-section-fact__container-content">
+                <p class="p-section-fact__container-content-big">47+</p>
+                <h2 class="p-section-fact__container-content-small">Awards</h2>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- About -->
+      <section class="p-section-about">
+        <div class="p-section-about__container l-wrapper">
+          <img
+            src="images/Image4.jpg"
+            alt="Image Person"
+            class="p-section-about__container-img"
+          />
+          <div class="p-section-about__container_content">
+            <h2 class="p-section-about__container__content-big">
+              I'm Winston Potter with a highly dedicated & hard working
+              personality.
+            </h2>
+            <p class="p-section-about__container__content-small">
+              Pellentesque vitae nisi eget nisi dapibus accumsan. Pellentesque
+              habitant morbi tristique senectus et netus et malesuada fames ac
+              turpis egestas. Fusce sit amet leo sem. Sed ac posuere neque,
+              scelerisque porta nulla. Aliquam erat volutpat.
+            </p>
+            <button class="p-section-about__container__content-button">
+              <a href="#" class="c-button_dowload">
+                <img
+                  src="images/DownloadSimple.svg"
+                  alt="Download"
+                  class="p-section-about__container__content-button-icon"
+                />
+                Download Resume
+              </a>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Education -->
+      <section class="p-section-education l-wrapper">
+        <div class="p-section-education__heading">
+          <h2 class="p-section-education__heading-big">
+            My Education & Awards
+          </h2>
+          <p class="p-section-education__heading-small">
+            Sed ac posuere neque, scelerisque porta nulla. Aliquam erat
+            volutpat. Nulla <br />
+            in mi malesuada, luctus nibh quis, rutrum arcu.
+          </p>
+        </div>
 
-    const iconLight = "images/Light_Mode.svg";
-    const iconDark = "images/Dark_Mode.svg";
+        <div class="p-section-edication__content">
+          <div class="p-section-education__heading-left">
+            <div class="p-section-education__heading-left__container">
+              <img
+                src="images/king.svg"
+                alt="King"
+                class="p-section-education__heading-left__container-icon"
+              />
+              <div class="p-section-education__heading-left__container-content">
+                <p
+                  class="p-section-education__heading-left__container-content-small"
+                >
+                  2016 to 2021 &#8226; University of Oxford
+                </p>
+                <h3
+                  class="p-section-education__heading-left__container-content-big"
+                >
+                  Bachelor of Laws (LLB)
+                </h3>
+                <p
+                  class="p-section-education__heading-left__container-content-text"
+                >
+                  Mauris efficitur, felis eu commodo vehicula, arcu nunc
+                  vehicula nulla, at commodo tortor ligula id sapien.
+                </p>
+              </div>
+            </div>
+            <div class="p-section-education__heading-left__container">
+              <img
+                src="images/tv.svg"
+                alt="TV"
+                class="p-section-education__heading-left__container-icon"
+              />
+              <div class="p-section-education__heading-left__container-content">
+                <p
+                  class="p-section-education__heading-left__container-content-small"
+                >
+                  2012 to 2016 &#8226; University of Cambridge
+                </p>
+                <h3
+                  class="p-section-education__heading-left__container-content-big"
+                >
+                  Bachelor of Science and Engineering
+                </h3>
+                <p
+                  class="p-section-education__heading-left__container-content-text"
+                >
+                  Donec ut ex eu libero euismod dapibus id quis ipsum. Phasellus
+                  non feugiat turpis, non gravida.
+                </p>
+              </div>
+            </div>
+            <div class="p-section-education__heading-left__container">
+              <img
+                src="images/cup.svg"
+                alt="Cup"
+                class="p-section-education__heading-left__container-icon"
+              />
+              <div class="p-section-education__heading-left__container-content">
+                <p
+                  class="p-section-education__heading-left__container-content-small"
+                >
+                  2010 to 2012 &#8226; University of Cambridge
+                </p>
+                <h3
+                  class="p-section-education__heading-left__container-content-big"
+                >
+                  Bachelor of Communication
+                </h3>
+                <p
+                  class="p-section-education__heading-left__container-content-text"
+                >
+                  Donec ut ex eu libero euismod dapibus id quis ipsum. Phasellus
+                  non feugiat turpis, non gravida.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="p-section-education__heading-right">
+            <div class="p-section-education__heading-right__container">
+              <img
+                src="images/Image2.jpg"
+                alt="Cup"
+                class="p-section-education__heading-right__container-icon"
+              />
+              <div
+                class="p-section-education__heading-right__container-content"
+              >
+                <p
+                  class="p-section-education__heading-right__container-content-small"
+                >
+                  Dec 7, 2019 &#8226; Awwwards
+                </p>
+                <h3
+                  class="p-section-education__heading-right__container-content-big"
+                >
+                  Best Laywer of the Month.
+                </h3>
+                <p
+                  class="p-section-education__heading-right__container-content-text"
+                >
+                  Nulla et volutpat est, ac mattis urna. Mauris rhoncus massa et
+                  gravida tristique. Praesent iaculis pulvinar convallis.
+                </p>
+              </div>
+            </div>
+            <div class="p-section-education__heading-right__container">
+              <img
+                src="images/Image3.jpg"
+                alt="Cup"
+                class="p-section-education__heading-right__container-icon"
+              />
+              <div
+                class="p-section-education__heading-right__container-content"
+              >
+                <p
+                  class="p-section-education__heading-right__container-content-small"
+                >
+                  Dec 7, 2019 &#8226; Awwwards
+                </p>
+                <h3
+                  class="p-section-education__heading-right__container-content-big"
+                >
+                  Top 40 Young Lawyers Awards.
+                </h3>
+                <p
+                  class="p-section-education__heading-right__container-content-text"
+                >
+                  Duis magna risus, convallis vel purus eu, sollicitudin
+                  volutpat velit. Duis fringilla nibh urna, quis rutrum nisl
+                  hendrerit quis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="hr-border" />
+      <!-- Feedback -->
+      <section class="p-section-feedback">
+        <div class="p-section-education__heading">
+          <h2 class="p-section-education__heading-big">My clients feedback</h2>
+          <p class="p-section-education__heading-small">
+            Sed ac posuere neque, scelerisque porta nulla. Aliquam erat
+            volutpat. Nulla <br />
+            in mi malesuada, luctus nibh quis, rutrum arcu.
+          </p>
+        </div>
+        <div class="p-section-feedback_testimonial l-wrapper">
+          <button class="p-section-feedback_testimonial-button">
+            <img
+              src="images/arrow_button-1.svg"
+              alt="Button"
+              class="p-section-feedback_testimonial-image"
+            />
+          </button>
+          <div class="p-section-feedback_testimonial-content">
+            <div class="p-section-feedback__testimonial-quote">
+              <img
+                src="images/Quote.svg"
+                alt="Quote"
+                class="p-section-feedback__testimonial-quote-image"
+              />
+            </div>
+            <p class="p-section-feedback__testimonial-text">
+              “Duis tempor ultrices elit sollicitudin aliquet. Nulla facilisi.
+              Donec sit amet nunc eros. Etiam et nisi in diam ultrices luctus in
+              a dui. Mauris in sem aliquet ligula convallis vestibulum. Etiam
+              non erat aliquam, lacinia nis.”
+            </p>
+            <div class="p-section-feedback__testimonial-name">
+              <p class="p-section-feedback__testimonial-name-big">
+                Cameron Williamson
+              </p>
+              <p class="p-section-feedback__testimonial-name-small">
+                Ceo & Founder of Google
+              </p>
+            </div>
+          </div>
+          <button class="p-section-feedback_testimonial-button">
+            <img
+              src="images/arrow_button-1.svg"
+              alt="Button"
+              class="p-section-feedback_testimonial-image"
+            />
+          </button>
+        </div>
+      </section>
+      <!-- Blog -->
+      <section class="p-section-blog">
+        <div class="p-setion-blog_container l-wrapper">
+          <h2 class="p-section-blog_container-heading">Blog & News</h2>
+          <div class="p-section-blog_container-card">
+            <div class="p-section-blog_container-card-layout">
+              <img
+                src="images/blog-1.jpg"
+                alt="Blog image"
+                class="p-section-blog_container-card-layout-imge"
+              />
+              <div class="p-section-blog_container-card-layout_content">
+                <div
+                  class="p-section-blog_container-card-layout_content_heading"
+                >
+                  <p
+                    class="p-section-blog_container-card-layout_content_heading-small"
+                  >
+                    22 Oct, 2020 &#x2F; 246 Comments
+                  </p>
+                  <h3
+                    class="p-section-blog_container-card-layout_content_heading-big"
+                  >
+                    Duis magna risus, convallis vel purus eu, sollicitudin
+                    volutpat velit.
+                  </h3>
+                </div>
+                <p class="p-section-blog_container-card-layout_content-text">
+                  Maecenas blandit auctor tempor. Class aptent taciti sociosqu
+                  ad litora torquent per conubia nostra.
+                </p>
+                <button
+                  class="p-section-blog_container-card-layout_content-button"
+                >
+                  Read more
+                  <img
+                    src="images/ArrowRight-2.svg"
+                    alt="Arrow Right"
+                    class="p-section-blog_container-card-layout__content-button-icon"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="p-section-blog_container-card-layout">
+              <img
+                src="images/blog-2.jpg"
+                alt="Blog image"
+                class="p-section-blog_container-card-layout-imge"
+              />
+              <div class="p-section-blog_container-card-layout_content">
+                <div
+                  class="p-section-blog_container-card-layout_content_heading"
+                >
+                  <p
+                    class="p-section-blog_container-card-layout_content_heading-small"
+                  >
+                    8 Sep, 2020 &#x2F; 246 Comments
+                  </p>
+                  <h3
+                    class="p-section-blog_container-card-layout_content_heading-big"
+                  >
+                    Donec ut ex eu libero euismod dapibus id quis ipsum.
+                  </h3>
+                </div>
+                <p class="p-section-blog_container-card-layout_content-text">
+                  Phasellus non feugiat turpis, non gravida lorem. Nulla
+                  fermentum odio in dolor dapibus, ac eleifend lectus
+                  ullamcorper.
+                </p>
+                <button
+                  class="p-section-blog_container-card-layout_content-button"
+                >
+                  Read more
+                  <img
+                    src="images/ArrowRight-2.svg"
+                    alt="Arrow Right"
+                    class="p-section-blog_container-card-layout__content-button-icon"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="p-section-blog_container-card-layout">
+              <img
+                src="images/blog-3.jpg"
+                alt="Blog image"
+                class="p-section-blog_container-card-layout-imge"
+              />
+              <div class="p-section-blog_container-card-layout_content">
+                <div
+                  class="p-section-blog_container-card-layout_content_heading"
+                >
+                  <p
+                    class="p-section-blog_container-card-layout_content_heading-small"
+                  >
+                    24 May, 2020 &#x2F; 246 Comments
+                  </p>
+                  <h3
+                    class="p-section-blog_container-card-layout_content_heading-big"
+                  >
+                    Maecenas congue cursus metus eget bibendum phasellus dign.
+                  </h3>
+                </div>
+                <p class="p-section-blog_container-card-layout_content-text">
+                  Praesent semper enim at lacus sagittis, non semper eros
+                  ullamcorper. Duis id elemtum nisl, eu tincidunt nisl.
+                </p>
+                <button
+                  class="p-section-blog_container-card-layout_content-button"
+                >
+                  Read more
+                  <img
+                    src="images/ArrowRight-2.svg"
+                    alt="Arrow Right"
+                    class="p-section-blog_container-card-layout__content-button-icon"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section class="p-section-contact l-wrapper">
+        <div class="p-section-contact_info">
+          <div class="p-section-contact_info_heading">
+            <h2 class="p-section-contact_info_heading-big">
+              Are you facing any problem, Book an appointment!
+            </h2>
+            <p class="p-section-contact_info_heading-small">
+              Aliquam neque diam, tincidunt a lacinia quis, imperdiet quis quam.
+              Phasellus id libero purus. Fusce vestibulum luctus ve.
+            </p>
+          </div>
+          <div class="p-section-contact_info_content">
+            <div class="p-section-contact_info_content_container">
+              <a href="mailto:kevin.gilbert.com" class="c-contact">
+                <img
+                  src="images/Envelope.svg"
+                  alt="Eveloper"
+                  class="p-section-contact_info_content_container-icon"
+                />
+                <div class="p-section-contact_info_content_container_content">
+                  <p
+                    class="p-section-contact_info_content_container_content-small"
+                  >
+                    Chat with me
+                  </p>
+                  <p
+                    class="p-section-contact_info_content_container_content-big"
+                  >
+                    kevin.gilbert.com
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div class="p-section-contact_info_content_container">
+              <a href="tel:+12025550190" class="c-contact">
+                <img
+                  src="images/PhoneCall.svg"
+                  alt="Phone Call"
+                  class="p-section-contact_info_content_container-icon"
+                />
+                <div class="p-section-contact_info_content_container_content">
+                  <p
+                    class="p-section-contact_info_content_container_content-small"
+                  >
+                    Call Me
+                  </p>
+                  <p
+                    class="p-section-contact_info_content_container_content-big"
+                  >
+                    +1 202 555 0190
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="p-section_contact_book">
+          <div class="p-section_contact_book_content">
+            <h3 class="p-section_contact_book_content-big">
+              Book Appointment With Me.
+            </h3>
+            <p class="p-section_contact_book_content-small">
+              Do you fancy saying hi to me or do you want to get started with
+              your project and you need my help? Feel free to contact me. I will
+              reply within 48 hours.
+            </p>
+          </div>
+          <form action="#" class="p-section_contact_form">
+            <div class="c-section_contact_form_name">
+              <input
+                type="text"
+                placeholder="Full Name"
+                id="full-name"
+                name="name"
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email Adress"
+              />
+            </div>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Subject"
+            />
+            <div class="c-section_contact_form_name">
+              <input
+                type="text"
+                placeholder="Date"
+                id="date"
+                name="date"
+                onfocus="this.type = 'date'"
+                onblur="if (!this.value) this.type = 'text';"
+              />
+              <input
+                type="time"
+                id="time"
+                name="time"
+                class="time-placeholder"
+              />
+            </div>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Message"
+            ></textarea>
+          </form>
 
-    function toggle() {
-      const body = document.body;
-      const icon = document.getElementById('switch-icon');
+          <button class="p-section_contact__button">
+            Book appointment
+            <img
+              src="images/ArrowRight-1.svg"
+              alt="Arrow Right"
+              class="p-section_contact__button-icon"
+            />
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="l-footer">
+      <div class="l-footer-layout l-wrapper">
+        <div class="l-wrapper l-footer__wrap">
+          <a href="#" class="l-footer__logo">
+            <img
+              src="images/Logo2.svg"
+              alt="Logo"
+              class="l-footer__logo--image"
+            />
+          </a>
+          <nav>
+            <ul class="l-footer__navigation">
+              <li class="l-footer__naviagtion-item">
+                <a href="#" class="l-footer__naviagtion-link"> Home </a>
+              </li>
+              <li class="l-footer__naviagtion-item">
+                <a href="#" class="l-footer__naviagtion-link"> About </a>
+              </li>
+              <li class="l-footer__naviagtion-item">
+                <a href="#" class="l-footer__naviagtion-link l-footer-active">
+                  Services
+                </a>
+              </li>
+              <li class="l-footer__naviagtion-item">
+                <a href="#" class="l-footer__naviagtion-link"> Project </a>
+              </li>
+              <li class="l-footer__naviagtion-item">
+                <a href="#" class="l-footer__naviagtion-link"> Services </a>
+              </li>
+              <li class="l-footer__naviagtion-item">
+                <a href="#" class="l-footer__naviagtion-link"> Article </a>
+              </li>
+              <li class="l-footer__naviagtion-item">
+                <a href="#" class="l-footer__naviagtion-link"> Contact </a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="l-footer__social">
+            <li class="l-footer__social-item">
+              <a
+                href="#"
+                class="l-footer__social-link"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="images/facebook-2.svg"
+                  alt="Facebook"
+                  class="l-footer-social__img"
+                />
+              </a>
+              <a
+                href="#"
+                class="l-footer__social-link"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="images/x-2.svg"
+                  alt="X"
+                  class="l-footer-social__img"
+                />
+              </a>
+            </li>
+            <li class="l-footer__social-item">
+              <a
+                href="#"
+                class="l-footer__social-link"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="images/linkedin-2.svg"
+                  alt="Linkedin"
+                  class="l-footer-social__img"
+                />
+              </a>
+              <a
+                href="#"
+                class="l-footer__social-link"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="images/medium-2.svg"
+                  alt="Medium"
+                  class="l-footer-social__img"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <hr class="l-footer__hr" />
+        <strong class="l-footer__copyright">&#169; 2022 Winston Potter</strong>
+      </div>
+    </footer>
+    <script>
+      const dmtKey = "dmt-theme";
 
-      const isDark = body.classList.toggle('night');
+      const iconLight = "images/Light_Mode.svg";
+      const iconDark = "images/Dark_Mode.svg";
 
-      icon.src = isDark ? iconDark : iconLight;
+      function toggle() {
+        const body = document.body;
+        const icon = document.getElementById("switch-icon");
 
-      localStorage.setItem(dmtKey, isDark ? 'dark' : 'light');
-    }
+        const isDark = body.classList.toggle("night");
 
-    (function () {
-      const saved = localStorage.getItem(dmtKey);
-      if (saved === 'dark') {
-        document.body.classList.add('night');
-        document.getElementById('switch-icon').src = iconDark;
+        icon.src = isDark ? iconDark : iconLight;
+
+        localStorage.setItem(dmtKey, isDark ? "dark" : "light");
       }
-    })();
 
-  </script>
-</body>
-
+      (function () {
+        const saved = localStorage.getItem(dmtKey);
+        if (saved === "dark") {
+          document.body.classList.add("night");
+          document.getElementById("switch-icon").src = iconDark;
+        }
+      })();
+    </script>
+  </body>
 </html>
